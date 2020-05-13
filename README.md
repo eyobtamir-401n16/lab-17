@@ -3,7 +3,7 @@
 * Author: Eyob Tamir
 
 ### Links and Resources
-[] () 
+[Submittion PR] () 
 
 ### back-end server url (NOT applicable)
 
@@ -18,6 +18,4 @@
 ### How to initialize/run your application 
  `npm start` || `nodemon`
 
-### Tests
-* jest --verbose --coverage
-* npm test lab-17 
+### Tests (Not applicable)
