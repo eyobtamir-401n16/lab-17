@@ -10,19 +10,21 @@ server.listen(port, () => {
   console.log('Server is up and running on port ', 3000)
 });
 
-
+server.on('connection', socket => {
+  console.log('recived connection from driver', socket.address())
+});
 
 server.on('connection', socket => {
   socketpool.push(socket)
+  console.log('socket', socketpool)
   console.log('recived connection', socket.address())
   socket.on('data', (payload) => {
+    console.log('payload', payload)
     let stringPayload = payload.toString();
+    console.log('string', stringPayload)
     let jsonpayload = JSON.parse(stringPayload)
-    console.log('- Time: ', jsonpayload.date)
-    console.log('- Store: ', jsonpayload.store)
-    console.log('- OrderID: ', jsonpayload.orderId)
-    console.log('- Customer: ', jsonpayload.customer)
-    console.log('- Adress: ', jsonpayload.address)
+    console.log('json', jsonpayload)
+ 
     console.log('-----------------------------')
 
   })
