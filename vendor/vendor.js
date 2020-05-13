@@ -10,8 +10,8 @@ setInterval( () => {
   let orderId = faker.random.number();
   let customer = faker.name.firstName() + ' ' + faker.name.lastName();
   let address = faker.address.streetAddress() + ' ' + faker.address.city() + ' ' + faker.address.state();
- 
-socket.write(JSON.stringify({date, store, orderId, customer, address })
+  let vendorObj = {date, store, orderId, customer, address }
+socket.write(JSON.stringify({event:'vendor', obj:vendorObj})
 )}, 2500);
 
 socket.connect({port:3000, host:'localhost'}, () => {
