@@ -5,13 +5,13 @@
 ### Links and Resources
 [PR link] (https://github.com/eyobtamir-401n16/lab-17/pull/3) 
 
-### back-end server url (NOT applicable)
+back-end server url (NOT applicable)
 
 
-### Heroku Link home Page (NOT applicable)
+Heroku Link home Page (NOT applicable)
 
 
-### Swagger on Heroku Link (NOT applicable)
+Swagger on Heroku Link (NOT applicable)
 **
 
 
